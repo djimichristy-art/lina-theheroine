@@ -3,10 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://1hvuocuky0a7" path="res://character2.png" id="1_f50pn"]
 [ext_resource type="Script" uid="uid://b5bjkrvpub5p" path="res://Player.gd" id="1_ij6vw"]
 
-[sub_resource type="Animation" id="Animation_ij6vw"]
-resource_name = "idle "
-length = 2.0
-step = 0.25
+[sub_resource type="Animation" id="Animation_ghijl"]
+length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -20,8 +18,10 @@ tracks/0/keys = {
 "values": [Rect2(32, 66, 32, 32)]
 }
 
-[sub_resource type="Animation" id="Animation_ghijl"]
-length = 0.001
+[sub_resource type="Animation" id="Animation_ij6vw"]
+resource_name = "idle "
+length = 2.0
+step = 0.25
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
