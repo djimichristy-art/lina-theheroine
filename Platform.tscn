@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s2ghs"]
 size = Vector2(31, 9)
 
-[node name="AnimatableBody2D" type="AnimatableBody2D"]
+[node name="Platform" type="AnimatableBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-0.5, 0.5)
@@ -17,3 +17,4 @@ region_rect = Rect2(17, 17, 30, 8)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 0.5)
 shape = SubResource("RectangleShape2D_s2ghs")
+one_way_collision = true

@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://htuwxmymxpiq"]
+[gd_scene load_steps=6 format=3 uid="uid://htuwxmymxpiq"]
 
 [ext_resource type="Texture2D" uid="uid://uvl7fh7vho38" path="res://assets/sprites/tilemap_packed.png" id="1_0f027"]
 [ext_resource type="PackedScene" uid="uid://u3qpaoukipf6" path="res://character_body_2d.tscn" id="2_2c62f"]
+[ext_resource type="PackedScene" uid="uid://b25nptbmxw7lv" path="res://Platform.tscn" id="3_gyfs4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2c62f"]
 texture = ExtResource("1_0f027")
@@ -161,3 +162,6 @@ layer_0/tile_data = PackedInt32Array(65531, 65536, 0, 65532, 131072, 0, 65533, 1
 
 [node name="Player" parent="TileMap" instance=ExtResource("2_2c62f")]
 position = Vector2(-34, -2)
+
+[node name="Platform" parent="." instance=ExtResource("3_gyfs4")]
+position = Vector2(35, -14)
