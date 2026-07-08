@@ -53,6 +53,7 @@ speed = 5.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(12, -20)
+ignore_rotation = false
 zoom = Vector2(2, 2)
 limit_bottom = 120
 limit_smoothed = true
