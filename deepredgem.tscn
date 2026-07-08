@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dehs7hary6esd"]
+
+[ext_resource type="Texture2D" uid="uid://bk6cwk67aolp6" path="res://assets/sprites/gem1-deepred.png" id="1_2diw2"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2g42l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2diw2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Area2D" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_2g42l")
