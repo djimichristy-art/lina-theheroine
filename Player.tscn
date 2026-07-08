@@ -46,7 +46,7 @@ height = 16.0
 [node name="Player" type="CharacterBody2D"]
 z_index = 5
 scale = Vector2(0.5, 0.5)
-platform_floor_layers = 4294967042
+platform_floor_layers = 4294967041
 platform_wall_layers = 1
 script = ExtResource("1_ij6vw")
 speed = 5.0
@@ -54,6 +54,8 @@ speed = 5.0
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(12, -20)
 zoom = Vector2(2, 2)
+limit_bottom = 120
+limit_smoothed = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -18)
