@@ -51,14 +51,6 @@ platform_wall_layers = 1
 script = ExtResource("1_ij6vw")
 speed = 5.0
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(12, -20)
-offset = Vector2(1, 1)
-ignore_rotation = false
-zoom = Vector2(2, 2)
-limit_bottom = 120
-limit_smoothed = true
-
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -18)
 sprite_frames = SubResource("SpriteFrames_lhvu3")
@@ -69,3 +61,11 @@ frame_progress = 0.45994258
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -12)
 shape = SubResource("CapsuleShape2D_186t8")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(12, -20)
+offset = Vector2(1, 1)
+ignore_rotation = false
+zoom = Vector2(2, 2)
+limit_bottom = 120
+limit_smoothed = true
