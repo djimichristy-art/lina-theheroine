@@ -50,16 +50,15 @@ platform_floor_layers = 4294967041
 platform_wall_layers = 1
 script = ExtResource("1_ij6vw")
 speed = 5.0
+jump_power = 12.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -18)
 sprite_frames = SubResource("SpriteFrames_lhvu3")
 animation = &"Idle"
 autoplay = "Idle"
 frame_progress = 0.45994258
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -12)
 shape = SubResource("CapsuleShape2D_186t8")
 
 [node name="Camera2D" type="Camera2D" parent="."]
