@@ -63,9 +63,7 @@ position = Vector2(0, -12)
 shape = SubResource("CapsuleShape2D_186t8")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(12, -20)
 offset = Vector2(1, 1)
 ignore_rotation = false
-zoom = Vector2(2, 2)
 limit_bottom = 120
 limit_smoothed = true
