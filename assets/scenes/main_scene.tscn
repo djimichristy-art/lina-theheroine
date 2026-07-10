@@ -241,7 +241,7 @@ position = Vector2(497, -19)
 position = Vector2(626, -9)
 
 [node name="Killzone" parent="." instance=ExtResource("5_eqalh")]
-position = Vector2(-14, 130)
+position = Vector2(92, 124)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 shape = SubResource("WorldBoundaryShape2D_vo808")
