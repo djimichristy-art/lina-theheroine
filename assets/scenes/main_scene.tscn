@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://htuwxmymxpiq"]
+[gd_scene load_steps=15 format=3 uid="uid://htuwxmymxpiq"]
 
 [ext_resource type="Texture2D" uid="uid://uvl7fh7vho38" path="res://assets/sprites/tilemap_packed.png" id="1_gagv8"]
 [ext_resource type="PackedScene" uid="uid://u3qpaoukipf6" path="res://Player.tscn" id="2_u44wh"]
@@ -6,10 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://brlc3eithp7ft" path="res://assets/scenes/coin.tscn" id="4_u44wh"]
 [ext_resource type="PackedScene" uid="uid://bx1l3k8a43lty" path="res://killzone.tscn" id="5_eqalh"]
 [ext_resource type="Texture2D" uid="uid://2gio622d6aey" path="res://assets/sprites/Parallax Forest Background (Seamless)/Parallax Forest Background - Blue/10_Sky.png" id="6_yecn6"]
-[ext_resource type="Texture2D" uid="uid://csgu8qfpc33xg" path="res://assets/sprites/Parallax Forest Background (Seamless)/Parallax Forest Background - Blue/06_Forest.png" id="7_supws"]
-[ext_resource type="Texture2D" uid="uid://jxyiiw0qco1f" path="res://assets/sprites/Parallax Forest Background (Seamless)/Parallax Forest Background - Blue/05_Particles.png" id="8_yecn6"]
+[ext_resource type="Texture2D" uid="uid://m2rvw5umfeqx" path="res://assets/sprites/Parallax Forest Background (Seamless)/Parallax Forest Background - Blue/04_Forest.png" id="7_0ft0v"]
 [ext_resource type="Texture2D" uid="uid://d3e02rdadq2kn" path="res://assets/sprites/Parallax Forest Background (Seamless)/Parallax Forest Background - Blue/01_Mist.png" id="9_51pxq"]
-[ext_resource type="Texture2D" uid="uid://bqkqrefty5k00" path="res://assets/sprites/Plants/Plant2.png" id="10_51pxq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2c62f"]
 texture = ExtResource("1_gagv8")
@@ -202,8 +200,18 @@ _data = {
 
 [node name="Level1" type="Node2D"]
 
+[node name="Background" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Background"]
+texture = ExtResource("6_yecn6")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background"]
+texture = ExtResource("7_0ft0v")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Background"]
+texture = ExtResource("9_51pxq")
+
 [node name="TileMap" type="TileMap" parent="."]
-position = Vector2(89, 724)
 tile_set = SubResource("TileSet_gyfs4")
 format = 2
 layer_0/tile_data = PackedInt32Array(65531, 65536, 0, 65532, 131072, 0, 65533, 131072, 0, 65534, 131072, 0, 65535, 131072, 0, 0, 131072, 0, 1, 131072, 0, 2, 131072, 0, 3, 131072, 0, 4, 131072, 0, 5, 131072, 0, 6, 131072, 0, 7, 131072, 0, 8, 131072, 0, 9, 131072, 0, 10, 131072, 0, 11, 131072, 0, 12, 131072, 0, 13, 131072, 0, 14, 131072, 0, 15, 131072, 0, 16, 131072, 0, 17, 131072, 0, 18, 131072, 0, 19, 131072, 0, 20, 196608, 0, 131067, 65536, 2, 131068, 131072, 2, 131069, 131072, 2, 131070, 131072, 2, 131071, 131072, 2, 65536, 131072, 2, 65537, 131072, 2, 65538, 131072, 2, 65539, 131072, 2, 65540, 131072, 2, 65541, 131072, 2, 65542, 131072, 2, 65543, 131072, 2, 65544, 131072, 2, 65545, 131072, 2, 65546, 131072, 2, 65547, 131072, 2, 65548, 131072, 2, 65549, 131072, 2, 65550, 131072, 2, 65551, 131072, 2, 65552, 131072, 2, 65553, 131072, 2, 65554, 131072, 2, 65555, 131072, 2, 65556, 131072, 2, 65559, 0, 0, 65560, 131072, 0, 65561, 131072, 0, 65562, 196608, 0, -65506, 131072, 0, -65507, 0, 0, -65505, 131072, 0, -65504, 131072, 0, -65503, 196608, 0, 37, 0, 0, 38, 131072, 0, 39, 131072, 0, 40, 131072, 0, 41, 131072, 0, 42, 196608, 0, 65585, 131072, 0, 65586, 131072, 0, 65587, 131072, 0, 65588, 131072, 0, 65589, 131072, 0, 65590, 131072, 0, 65591, 131072, 0, 65592, 131072, 0, 65593, 131072, 0, 65594, 131072, 0, 65595, 131072, 0, 65596, 131072, 0, 65597, 131072, 0, 65598, 131072, 0, 65599, 131072, 0, 65600, 131072, 0, 65601, 131072, 0, 65602, 131072, 0, 65603, 131072, 0, 65604, 131072, 0, 65605, 131072, 0, 65606, 131072, 0, 65607, 131072, 0, 65608, 131072, 0, 131121, 131072, 2, 131122, 131072, 2, 131123, 131072, 2, 131124, 131072, 2, 131125, 131072, 2, 131126, 131072, 2, 131127, 131072, 2, 131128, 131072, 2, 131129, 131072, 2, 131130, 131072, 2, 131131, 131072, 2, 131132, 131072, 2, 131133, 131072, 2, 131134, 131072, 2, 131135, 131072, 2, 131136, 131072, 2, 131137, 131072, 2, 131138, 131072, 2, 131139, 131072, 2, 131140, 131072, 2, 131141, 131072, 2, 131142, 131072, 2, 131143, 131072, 2, 131144, 131072, 2, 196657, 131072, 2, 196658, 131072, 2, 196659, 131072, 2, 196660, 131072, 2, 196661, 131072, 2, 196662, 131072, 2, 196663, 131072, 2, 196664, 131072, 2, 196665, 131072, 2, 196666, 131072, 2, 196667, 131072, 2, 196668, 131072, 2, 196672, 131072, 2, 196673, 131072, 2, 196674, 131072, 2, 196675, 131072, 2, 196676, 131072, 2, 196677, 131072, 2, 196678, 131072, 2, 196679, 131072, 2, 196680, 131072, 2, 196671, 131072, 2, 196670, 131072, 2, 196669, 131072, 2, 75, 0, 0, 76, 131072, 0, 77, 131072, 0, 78, 131072, 0, 79, 131072, 0, -65455, 0, 0, -65454, 131072, 0, -65453, 131072, 0, -65452, 131072, 0, -65451, 131072, 0, -65450, 131072, 0, -65449, 131072, 0, -65448, 131072, 0, -65447, 131072, 0, -65446, 131072, 0, -65445, 131072, 0, -65444, 131072, 0, -65443, 131072, 0, -65442, 131072, 0, -65441, 131072, 0, -65440, 131072, 0, -65439, 131072, 0, -65438, 131072, 0, -65437, 131072, 0, -65436, 131072, 0, -65435, 131072, 0, -65434, 131072, 0, -65433, 131072, 0, -65432, 131072, 0, -65431, 131072, 0, -65430, 131072, 0, -65429, 131072, 0, -65428, 131072, 0, -65427, 131072, 0, 81, 0, 2, 82, 131072, 2, 83, 131072, 2, 84, 131072, 2, 65620, 131072, 2, 65621, 131072, 2, 65622, 131072, 2, 65623, 131072, 2, 65624, 131072, 2, 65625, 131072, 2, 65626, 131072, 2, 65627, 131072, 2, 85, 131072, 2, 86, 131072, 2, 87, 131072, 2, 88, 131072, 2, 89, 131072, 2, 90, 131072, 2, 91, 131072, 2, 92, 131072, 2, 93, 131072, 2, 94, 131072, 2, 95, 131072, 2, 96, 131072, 2, 97, 131072, 2, 98, 131072, 2, 99, 131072, 2, 100, 131072, 2, 101, 131072, 2, 102, 131072, 2, 103, 131072, 2, 104, 131072, 2, 105, 131072, 2, 106, 131072, 2, 107, 131072, 2, 108, 131072, 2, 109, 131072, 2, 65617, 131072, 2, 65618, 131072, 2, 65619, 131072, 2, 65628, 131072, 2, 65629, 131072, 2, 65630, 131072, 2, 65631, 131072, 2, 65632, 131072, 2, 65633, 131072, 2, 65634, 131072, 2, 65635, 131072, 2, 65636, 131072, 2, 65637, 131072, 2, 65638, 131072, 2, 65639, 131072, 2, 65640, 131072, 2, 65641, 131072, 2, 65642, 131072, 2, 65643, 131072, 2, 65644, 131072, 2, 65645, 131072, 2, 65648, 0, 0, 65649, 196608, 0, 65650, 196608, 0, 65651, 196608, 0, 65652, 196608, 0, 65653, 196608, 0, 65654, 196608, 0, 131193, 0, 0, 131194, 131072, 0, 131195, 131072, 0, 131196, 131072, 0, 131197, 131072, 0, 65664, 0, 0, 65665, 131072, 0, 65666, 131072, 0, 65667, 131072, 0, 65668, 131072, 0, 65669, 131072, 0, 136, 0, 0, 137, 131072, 0, 138, 131072, 0, 139, 131072, 0, 140, 131072, 0, 141, 131072, 0, 142, 131072, 0, -65389, 0, 0, -65388, 131072, 0, -65387, 131072, 0, -65386, 131072, 0, -65385, 131072, 0, -65384, 131072, 0, -65383, 131072, 0, -65382, 131072, 0, -65381, 131072, 0, -65380, 131072, 0, -65379, 131072, 0, -65378, 131072, 0, -65377, 131072, 0, -65376, 131072, 0, -65375, 131072, 0, -65374, 131072, 0, -65373, 131072, 0, -65372, 131072, 0, -65371, 131072, 0, -65370, 131072, 0, -65369, 131072, 0, -65368, 131072, 0, -65367, 131072, 0, -65366, 131072, 0, -65365, 131072, 0, -65364, 131072, 0, -65363, 131072, 0, -65362, 131072, 0, -65361, 131072, 0, -65360, 131072, 0, -65359, 131072, 0, 147, 0, 2, 148, 131072, 2, 149, 131072, 2, 150, 131072, 2, 151, 131072, 2, 152, 131072, 2, 153, 131072, 2, 154, 131072, 2, 155, 131072, 2, 156, 131072, 2, 157, 131072, 2, 158, 131072, 2, 159, 131072, 2, 160, 131072, 2, 161, 131072, 2, 162, 131072, 2, 163, 131072, 2, 164, 131072, 2, 165, 131072, 2, 166, 131072, 2, 167, 131072, 2, 168, 131072, 2, 169, 131072, 2, 170, 131072, 2, 171, 131072, 2, 172, 131072, 2, 173, 131072, 2, 174, 131072, 2, 175, 131072, 2, 176, 131072, 2, 177, 131072, 2)
@@ -251,44 +259,3 @@ libraries = {
 &"": SubResource("AnimationLibrary_8mm7a")
 }
 autoplay = "move"
-
-[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2(2, 2)
-
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-texture = ExtResource("6_yecn6")
-centered = false
-
-[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2(2, 2)
-
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
-texture = ExtResource("7_supws")
-centered = false
-
-[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2(2, 2)
-
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
-texture = ExtResource("8_yecn6")
-centered = false
-
-[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2(2, 2)
-
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
-texture = ExtResource("9_51pxq")
-centered = false
-
-[node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground"]
-position = Vector2(0, -2)
-motion_scale = Vector2(2, 2)
-motion_mirroring = Vector2(576, 0)
-
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer5"]
-position = Vector2(58.5, 3.5)
-scale = Vector2(1.430147, 1.1458334)
-texture = ExtResource("10_51pxq")
-centered = false
