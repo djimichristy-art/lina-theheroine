@@ -238,9 +238,6 @@ position = Vector2(497, -19)
 [node name="coin6" parent="Coins" instance=ExtResource("4_u44wh")]
 position = Vector2(626, -9)
 
-[node name="Killzone" parent="." instance=ExtResource("5_eqalh")]
-position = Vector2(92, 124)
-
 [node name="Platforms" type="Node" parent="."]
 
 [node name="Platform" parent="Platforms" instance=ExtResource("3_eqalh")]
@@ -257,4 +254,9 @@ libraries = {
 autoplay = "move"
 
 [node name="Enemy" parent="." instance=ExtResource("9_702vk")]
-position = Vector2(907, -14)
+position = Vector2(-11, 164)
+
+[node name="Killzone" parent="." instance=ExtResource("5_eqalh")]
+position = Vector2(193, 843)
+
+[editable path="Killzone"]
