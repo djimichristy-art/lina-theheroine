@@ -259,4 +259,31 @@ position = Vector2(-11, 164)
 [node name="Killzone" parent="." instance=ExtResource("5_eqalh")]
 position = Vector2(193, 843)
 
+[node name="Label" type="Label" parent="."]
+offset_left = -86.0
+offset_top = -38.0
+offset_right = -46.0
+offset_bottom = -15.0
+theme_override_colors/font_color = Color(0.13118285, 0.05596775, 0.3155179, 1)
+theme_override_font_sizes/font_size = 16
+text = "Pick the coins"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 341.0
+offset_top = -40.0
+offset_right = 447.0
+offset_bottom = -17.0
+theme_override_colors/font_color = Color(0.13118285, 0.05596775, 0.3155179, 1)
+theme_override_font_sizes/font_size = 16
+text = "Falling hurts"
+
+[node name="Label3" type="Label" parent="."]
+offset_left = 798.0
+offset_top = -54.0
+offset_right = 904.0
+offset_bottom = -31.0
+theme_override_colors/font_color = Color(0.13118285, 0.05596775, 0.3155179, 1)
+theme_override_font_sizes/font_size = 16
+text = "Do not touch the enemy"
+
 [editable path="Killzone"]
