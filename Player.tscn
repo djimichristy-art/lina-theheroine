@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://u3qpaoukipf6"]
+[gd_scene load_steps=12 format=3 uid="uid://u3qpaoukipf6"]
 
 [ext_resource type="Texture2D" uid="uid://1hvuocuky0a7" path="res://character2.png" id="1_f50pn"]
 [ext_resource type="Script" uid="uid://b5bjkrvpub5p" path="res://Player.gd" id="1_ij6vw"]
@@ -18,10 +18,6 @@ region = Rect2(0, 96, 32, 32)
 [sub_resource type="AtlasTexture" id="AtlasTexture_dd465"]
 atlas = ExtResource("1_f50pn")
 region = Rect2(32, 96, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_cxr5p"]
-atlas = ExtResource("1_f50pn")
-region = Rect2(0, 64, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kpjcp"]
 atlas = ExtResource("1_f50pn")
@@ -56,14 +52,6 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_cxr5p")
-}],
-"loop": true,
-"name": &"jump",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_kpjcp")
 }, {
 "duration": 1.0,
@@ -90,8 +78,7 @@ script = ExtResource("1_ij6vw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_lhvu3")
-animation = &"jump"
-autoplay = "Idle"
+animation = &"Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_186t8")
