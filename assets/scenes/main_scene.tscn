@@ -227,6 +227,30 @@ texture = ExtResource("7_0ft0v")
 [node name="Sprite2D3" type="Sprite2D" parent="Background"]
 texture = ExtResource("9_51pxq")
 
+[node name="Background2" type="Node2D" parent="."]
+position = Vector2(2256, 34)
+
+[node name="Sprite2D" type="Sprite2D" parent="Background2"]
+texture = ExtResource("6_yecn6")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background2"]
+texture = ExtResource("7_0ft0v")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Background2"]
+texture = ExtResource("9_51pxq")
+
+[node name="Background3" type="Node2D" parent="."]
+position = Vector2(4178, 30)
+
+[node name="Sprite2D" type="Sprite2D" parent="Background3"]
+texture = ExtResource("6_yecn6")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Background3"]
+texture = ExtResource("7_0ft0v")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Background3"]
+texture = ExtResource("9_51pxq")
+
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_gyfs4")
 format = 2
@@ -377,7 +401,5 @@ offset_bottom = -66.0
 theme_override_colors/font_color = Color(0.13118285, 0.05596775, 0.3155179, 1)
 theme_override_font_sizes/font_size = 16
 text = "Do not walk on the grass"
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [editable path="Killzone"]

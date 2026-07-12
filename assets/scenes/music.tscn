@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dwf5l7jknle6"]
+
+[ext_resource type="AudioStream" uid="uid://gr2s87wa4vi4" path="res://assets/sprites/dungeon_theme_1.wav" id="1_xuygp"]
+
+[node name="Music" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_xuygp")
+autoplay = true
+bus = &"Music"
