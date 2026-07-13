@@ -1,9 +1,9 @@
 [gd_scene load_steps=17 format=3 uid="uid://hl7islatoned"]
 
 [ext_resource type="Script" uid="uid://byxol24gucjhw" path="res://assets/scenes/game_manager.gd" id="1_iaj0w"]
-[ext_resource type="Texture2D" uid="uid://2gio622d6aey" path="res://assets/sprites/Parallax Forest Background (Seamless)/Parallax Forest Background - Blue/10_Sky.png" id="2_6rrfn"]
-[ext_resource type="Texture2D" uid="uid://m2rvw5umfeqx" path="res://assets/sprites/Parallax Forest Background (Seamless)/Parallax Forest Background - Blue/04_Forest.png" id="3_n8xpt"]
-[ext_resource type="Texture2D" uid="uid://d3e02rdadq2kn" path="res://assets/sprites/Parallax Forest Background (Seamless)/Parallax Forest Background - Blue/01_Mist.png" id="4_bytnh"]
+[ext_resource type="Texture2D" uid="uid://boy8j34mvnnhm" path="res://assets/sprites/background 1/1.png" id="2_iaj0w"]
+[ext_resource type="Texture2D" uid="uid://b3vcuu5sir54n" path="res://assets/sprites/2.png" id="3_6rrfn"]
+[ext_resource type="Texture2D" uid="uid://bp1rshnb4rkpj" path="res://assets/sprites/8.png" id="4_n8xpt"]
 [ext_resource type="Texture2D" uid="uid://uvl7fh7vho38" path="res://assets/sprites/tilemap_packed.png" id="5_lxr3f"]
 [ext_resource type="PackedScene" uid="uid://u3qpaoukipf6" path="res://Player.tscn" id="6_ysd26"]
 [ext_resource type="PackedScene" uid="uid://brlc3eithp7ft" path="res://assets/scenes/coin.tscn" id="7_okojh"]
@@ -221,37 +221,55 @@ autowrap_mode = 2
 position = Vector2(340, 34)
 
 [node name="Sprite2D" type="Sprite2D" parent="Background"]
-texture = ExtResource("2_6rrfn")
+position = Vector2(29.999992, 16.5)
+scale = Vector2(3.2361116, 3.3364198)
+texture = ExtResource("2_iaj0w")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Background"]
-texture = ExtResource("3_n8xpt")
+position = Vector2(35.500046, -379.5)
+scale = Vector2(3.1128473, 0.9351852)
+texture = ExtResource("3_6rrfn")
 
 [node name="Sprite2D3" type="Sprite2D" parent="Background"]
-texture = ExtResource("4_bytnh")
+position = Vector2(29.500015, -91.49999)
+scale = Vector2(3.1614587, 1.1820987)
+texture = ExtResource("4_n8xpt")
 
 [node name="Background2" type="Node2D" parent="."]
 position = Vector2(2256, 34)
 
 [node name="Sprite2D" type="Sprite2D" parent="Background2"]
-texture = ExtResource("2_6rrfn")
+position = Vector2(7.0000305, 8)
+scale = Vector2(3.3420136, 3.2932098)
+texture = ExtResource("2_iaj0w")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Background2"]
-texture = ExtResource("3_n8xpt")
+position = Vector2(27, -313)
+scale = Vector2(3.0520833, 1.2037036)
+texture = ExtResource("3_6rrfn")
 
 [node name="Sprite2D3" type="Sprite2D" parent="Background2"]
-texture = ExtResource("4_bytnh")
+position = Vector2(11.9999695, -84)
+scale = Vector2(3.402778, 1.1358025)
+texture = ExtResource("4_n8xpt")
 
 [node name="Background3" type="Node2D" parent="."]
 position = Vector2(4174, 34)
 
 [node name="Sprite2D" type="Sprite2D" parent="Background3"]
-texture = ExtResource("2_6rrfn")
+position = Vector2(2.0002136, 2.999998)
+scale = Vector2(3.3194444, 3.3117287)
+texture = ExtResource("2_iaj0w")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Background3"]
-texture = ExtResource("3_n8xpt")
+position = Vector2(33.00009, -346.5)
+scale = Vector2(3.2048614, 1.3425926)
+texture = ExtResource("3_6rrfn")
 
 [node name="Sprite2D3" type="Sprite2D" parent="Background3"]
-texture = ExtResource("4_bytnh")
+position = Vector2(-4.000061, -86)
+scale = Vector2(3.3333333, 1.228395)
+texture = ExtResource("4_n8xpt")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_gyfs4")
