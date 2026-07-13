@@ -361,7 +361,7 @@ libraries = {
 autoplay = "move"
 
 [node name="Enemy" parent="." instance=ExtResource("9_702vk")]
-position = Vector2(-11, 164)
+position = Vector2(-16, 164)
 
 [node name="Labels" type="Node" parent="."]
 
@@ -402,7 +402,7 @@ theme_override_font_sizes/font_size = 16
 text = "Do not walk on the grass"
 
 [node name="Killzone" parent="." instance=ExtResource("5_eqalh")]
-position = Vector2(250, 865)
+position = Vector2(260, 842)
 
 [node name="CollisionShape2D" parent="Killzone" index="0"]
 shape = SubResource("WorldBoundaryShape2D_yecn6")

@@ -1,10 +1,14 @@
-[gd_scene load_steps=17 format=3 uid="uid://dtociq0jdh1cs"]
+[gd_scene load_steps=21 format=3 uid="uid://dtociq0jdh1cs"]
 
 [ext_resource type="Script" uid="uid://byxol24gucjhw" path="res://assets/scenes/game_manager.gd" id="1_kd88i"]
 [ext_resource type="Texture2D" uid="uid://2gio622d6aey" path="res://assets/sprites/Parallax Forest Background (Seamless)/Parallax Forest Background - Blue/10_Sky.png" id="2_8tpxy"]
+[ext_resource type="Texture2D" uid="uid://b2o6blsu5ij2u" path="res://assets/sprites/1.png" id="2_fnisj"]
 [ext_resource type="Texture2D" uid="uid://m2rvw5umfeqx" path="res://assets/sprites/Parallax Forest Background (Seamless)/Parallax Forest Background - Blue/04_Forest.png" id="3_0fgof"]
+[ext_resource type="Texture2D" uid="uid://c6atmg1jhv738" path="res://assets/sprites/4.png" id="3_sjktd"]
 [ext_resource type="Texture2D" uid="uid://d3e02rdadq2kn" path="res://assets/sprites/Parallax Forest Background (Seamless)/Parallax Forest Background - Blue/01_Mist.png" id="4_yeg7j"]
+[ext_resource type="Texture2D" uid="uid://iax6q0wlbjgm" path="res://assets/sprites/3.png" id="4_yl7u7"]
 [ext_resource type="Texture2D" uid="uid://uvl7fh7vho38" path="res://assets/sprites/tilemap_packed.png" id="5_fnisj"]
+[ext_resource type="Texture2D" uid="uid://d8vix3xtknc1" path="res://assets/sprites/background 3/3.png" id="5_gr4gs"]
 [ext_resource type="PackedScene" uid="uid://u3qpaoukipf6" path="res://Player.tscn" id="6_sjktd"]
 [ext_resource type="PackedScene" uid="uid://brlc3eithp7ft" path="res://assets/scenes/coin.tscn" id="7_yl7u7"]
 [ext_resource type="PackedScene" uid="uid://b25nptbmxw7lv" path="res://assets/scenes/Platform.tscn" id="8_gr4gs"]
@@ -218,16 +222,27 @@ horizontal_alignment = 1
 autowrap_mode = 2
 
 [node name="Background" type="Node2D" parent="."]
-position = Vector2(340, 34)
+position = Vector2(354, 29)
 
 [node name="Sprite2D" type="Sprite2D" parent="Background"]
-texture = ExtResource("2_8tpxy")
+position = Vector2(26.499954, 3.2424927e-05)
+scale = Vector2(3.1649306, 3.308642)
+texture = ExtResource("2_fnisj")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Background"]
-texture = ExtResource("3_0fgof")
+position = Vector2(-1.0000076, -494)
+scale = Vector2(2.75, 1)
+texture = ExtResource("3_sjktd")
 
 [node name="Sprite2D3" type="Sprite2D" parent="Background"]
-texture = ExtResource("4_yeg7j")
+position = Vector2(25.00003, 16)
+scale = Vector2(3.1701388, 1.2345679)
+texture = ExtResource("4_yl7u7")
+
+[node name="Sprite2D4" type="Sprite2D" parent="Background"]
+position = Vector2(23, -386)
+scale = Vector2(3.1631944, 1)
+texture = ExtResource("5_gr4gs")
 
 [node name="Background2" type="Node2D" parent="."]
 position = Vector2(2256, 34)
