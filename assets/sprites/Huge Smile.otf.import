@@ -1,0 +1,36 @@
+[remap]
+
+importer="font_data_dynamic"
+type="FontFile"
+uid="uid://c771h01tdc3cl"
+path="res://.godot/imported/Huge Smile.otf-7c8a2bf52501905abdd0f1eb37bdc42b.fontdata"
+
+[deps]
+
+source_file="res://assets/sprites/Huge Smile.otf"
+dest_files=["res://.godot/imported/Huge Smile.otf-7c8a2bf52501905abdd0f1eb37bdc42b.fontdata"]
+
+[params]
+
+Rendering=null
+antialiasing=1
+generate_mipmaps=false
+disable_embedded_bitmaps=true
+multichannel_signed_distance_field=false
+msdf_pixel_range=8
+msdf_size=48
+allow_system_fallback=true
+force_autohinter=false
+modulate_color_glyphs=false
+hinting=1
+subpixel_positioning=4
+keep_rounding_remainders=true
+oversampling=0.0
+Fallbacks=null
+fallbacks=[]
+Compress=null
+compress=true
+preload=[]
+language_support={}
+script_support={}
+opentype_features={}
