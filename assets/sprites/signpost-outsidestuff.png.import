@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bi4cc110qkg6n"
-path="res://.godot/imported/1.png-c9a8e694d0d275633d567702fb508122.ctex"
+uid="uid://blh80w5x7iie"
+path="res://.godot/imported/signpost-outsidestuff.png-b28c8544236a8573d901f74c12fcad01.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/1.png"
-dest_files=["res://.godot/imported/1.png-c9a8e694d0d275633d567702fb508122.ctex"]
+source_file="res://assets/sprites/signpost-outsidestuff.png"
+dest_files=["res://.godot/imported/signpost-outsidestuff.png-b28c8544236a8573d901f74c12fcad01.ctex"]
 
 [params]
 

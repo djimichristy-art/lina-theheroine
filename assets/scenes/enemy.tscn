@@ -1,8 +1,8 @@
 [gd_scene load_steps=13 format=3 uid="uid://baer8lkouh6mv"]
 
 [ext_resource type="Texture2D" uid="uid://ctic246otyw21" path="res://assets/sprites/Forest_Monsters_FREE/Mushroom/Mushroom with VFX/Mushroom-Idle.png" id="1_4gyqm"]
-[ext_resource type="Script" uid="uid://rvd44m6c3v5f" path="res://enemy.gd" id="1_qi2p4"]
-[ext_resource type="PackedScene" uid="uid://bx1l3k8a43lty" path="res://killzone.tscn" id="2_qi2p4"]
+[ext_resource type="Script" uid="uid://rvd44m6c3v5f" path="res://assets/scripts/enemy.gd" id="1_qi2p4"]
+[ext_resource type="PackedScene" uid="uid://bx1l3k8a43lty" path="res://assets/scenes/killzone.tscn" id="2_qi2p4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iifgy"]
 atlas = ExtResource("1_4gyqm")
