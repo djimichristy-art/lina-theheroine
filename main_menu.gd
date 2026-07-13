@@ -12,11 +12,11 @@ func _processed(delta):
 
 
 func _on_button_pressed() -> void:
-	print("Start pressed")
+	get_tree().change_scene_to_file("res://assets/scenes/level1.tscn")
 
 
 func _on_settings_pressed() -> void:
 	print("Settings pressed")
 
 func _on_exit_pressed() -> void:
-	print("Exit pressed")
+	get_tree().quit()

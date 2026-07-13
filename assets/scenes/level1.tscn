@@ -199,7 +199,7 @@ _data = {
 &"move": SubResource("Animation_gyfs4")
 }
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_yecn6"]
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_uki8p"]
 
 [node name="level1" type="Node2D" groups=["Player"]]
 
@@ -362,7 +362,7 @@ libraries = {
 autoplay = "move"
 
 [node name="Enemy" parent="." instance=ExtResource("9_ow024")]
-position = Vector2(-16, 164)
+position = Vector2(1067, -15)
 
 [node name="Labels" type="Node" parent="."]
 
@@ -402,13 +402,11 @@ theme_override_colors/font_color = Color(0.13118285, 0.05596775, 0.3155179, 1)
 theme_override_font_sizes/font_size = 16
 text = "Do not walk on the grass"
 
-[node name="Killzone" parent="." instance=ExtResource("10_jx24s")]
-position = Vector2(260, 842)
-
-[node name="CollisionShape2D" parent="Killzone" index="0"]
-shape = SubResource("WorldBoundaryShape2D_yecn6")
-
 [node name="LevelExit" parent="." instance=ExtResource("11_uki8p")]
 position = Vector2(4964, 31)
 
-[editable path="Killzone"]
+[node name="Killzone" parent="." instance=ExtResource("10_jx24s")]
+position = Vector2(137, 98)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Killzone"]
+shape = SubResource("WorldBoundaryShape2D_uki8p")
