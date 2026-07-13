@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3 uid="uid://u3qpaoukipf6"]
 
 [ext_resource type="Texture2D" uid="uid://1hvuocuky0a7" path="res://assets/sprites/character2.png" id="1_f50pn"]
-[ext_resource type="Script" uid="uid://1wpccx8jo50u" path="res://assets/scripts/Player.gd" id="1_ij6vw"]
+[ext_resource type="Script" uid="uid://b5bjkrvpub5p" path="res://assets/scripts/Player.gd" id="1_ij6vw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ij6vw"]
 atlas = ExtResource("1_f50pn")
@@ -69,7 +69,7 @@ animations = [{
 radius = 8.0
 height = 16.0
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
 z_index = 5
 platform_floor_layers = 4294967041
 platform_wall_layers = 1

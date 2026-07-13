@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://htuwxmymxpiq"]
+[gd_scene load_steps=18 format=3 uid="uid://htuwxmymxpiq"]
 
 [ext_resource type="Script" uid="uid://byxol24gucjhw" path="res://assets/scripts/game_manager.gd" id="1_kbvyv"]
 [ext_resource type="Texture2D" uid="uid://2gio622d6aey" path="res://assets/sprites/Parallax Forest Background (Seamless)/Parallax Forest Background - Blue/10_Sky.png" id="2_uki8p"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://b25nptbmxw7lv" path="res://assets/scenes/Platform.tscn" id="8_iemjl"]
 [ext_resource type="PackedScene" uid="uid://baer8lkouh6mv" path="res://assets/scenes/enemy.tscn" id="9_ow024"]
 [ext_resource type="PackedScene" uid="uid://bx1l3k8a43lty" path="res://assets/scenes/killzone.tscn" id="10_jx24s"]
+[ext_resource type="PackedScene" uid="uid://vcnnckq6icbs" path="res://assets/scenes/level_exit.tscn" id="11_uki8p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2c62f"]
 texture = ExtResource("5_y1mtp")
@@ -200,7 +201,7 @@ _data = {
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_yecn6"]
 
-[node name="level1" type="Node2D"]
+[node name="level1" type="Node2D" groups=["Player"]]
 
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
@@ -406,5 +407,8 @@ position = Vector2(260, 842)
 
 [node name="CollisionShape2D" parent="Killzone" index="0"]
 shape = SubResource("WorldBoundaryShape2D_yecn6")
+
+[node name="LevelExit" parent="." instance=ExtResource("11_uki8p")]
+position = Vector2(4964, 31)
 
 [editable path="Killzone"]
