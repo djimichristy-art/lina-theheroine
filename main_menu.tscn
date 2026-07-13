@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://dj5bk28qwkmym"]
+[gd_scene load_steps=7 format=3 uid="uid://dj5bk28qwkmym"]
 
+[ext_resource type="Script" uid="uid://ub78ly863nlg" path="res://main_menu.gd" id="1_06t4h"]
 [ext_resource type="Texture2D" uid="uid://d3imq1cdkohu6" path="res://assets/sprites/Capture d'écran 2026-07-13 172839.png" id="1_7vrkn"]
 [ext_resource type="FontFile" uid="uid://dxp4av3qvdxbw" path="res://assets/sprites/Huge Smile.otf" id="2_fu7sn"]
 
@@ -16,6 +17,8 @@ corner_radius_bottom_left = 16
 shadow_size = 5
 shadow_offset = Vector2(0, 3)
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fu7sn"]
+
 [node name="MainMenu" type="Control"]
 layout_mode = 3
 anchors_preset = 8
@@ -25,6 +28,7 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_06t4h")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -99,6 +103,11 @@ offset_bottom = -89.0
 theme_override_colors/font_shadow_color = Color(0, 0.003921569, 0, 0)
 theme_override_fonts/font = ExtResource("2_fu7sn")
 theme_override_font_sizes/font_size = 101
+theme_override_styles/focus = SubResource("StyleBoxEmpty_fu7sn")
 text = "Lina the Heroine"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_exit_pressed"]
