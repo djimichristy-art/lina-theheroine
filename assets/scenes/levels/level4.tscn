@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://uvmkii20tpd8"]
+[gd_scene load_steps=17 format=3 uid="uid://uvmkii20tpd8"]
 
 [ext_resource type="Script" uid="uid://byxol24gucjhw" path="res://assets/scripts/game_manager.gd" id="1_2dmde"]
 [ext_resource type="Texture2D" uid="uid://2gio622d6aey" path="res://assets/sprites/Parallax Forest Background (Seamless)/Parallax Forest Background - Blue/10_Sky.png" id="2_djkwp"]
@@ -199,8 +199,6 @@ _data = {
 &"move": SubResource("Animation_gyfs4")
 }
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_yecn6"]
-
 [node name="level1" type="Node2D" groups=["Player"]]
 
 [node name="GameManager" type="Node" parent="."]
@@ -362,7 +360,7 @@ libraries = {
 autoplay = "move"
 
 [node name="Enemy" parent="." instance=ExtResource("9_1tb34")]
-position = Vector2(-16, 164)
+position = Vector2(892, -20)
 
 [node name="Labels" type="Node" parent="."]
 
@@ -402,13 +400,8 @@ theme_override_colors/font_color = Color(0.13118285, 0.05596775, 0.3155179, 1)
 theme_override_font_sizes/font_size = 16
 text = "Do not walk on the grass"
 
-[node name="Killzone" parent="." instance=ExtResource("10_udr7q")]
-position = Vector2(260, 842)
-
-[node name="CollisionShape2D" parent="Killzone" index="0"]
-shape = SubResource("WorldBoundaryShape2D_yecn6")
-
 [node name="LevelExit" parent="." instance=ExtResource("11_ustmx")]
 position = Vector2(4964, 31)
 
-[editable path="Killzone"]
+[node name="Killzone" parent="." instance=ExtResource("10_udr7q")]
+position = Vector2(-29, 188)

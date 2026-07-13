@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://ce0ydwq7jhpi7"]
+[gd_scene load_steps=16 format=3 uid="uid://ce0ydwq7jhpi7"]
 
 [ext_resource type="Script" uid="uid://byxol24gucjhw" path="res://assets/scripts/game_manager.gd" id="1_iaj0w"]
 [ext_resource type="Texture2D" uid="uid://boy8j34mvnnhm" path="res://assets/sprites/background 1/1.png" id="2_iaj0w"]
@@ -198,8 +198,6 @@ _data = {
 &"move": SubResource("Animation_gyfs4")
 }
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_yecn6"]
-
 [node name="level3" type="Node2D"]
 
 [node name="GameManager" type="Node" parent="."]
@@ -379,7 +377,7 @@ libraries = {
 autoplay = "move"
 
 [node name="Enemy" parent="." instance=ExtResource("9_7q60e")]
-position = Vector2(-16, 164)
+position = Vector2(920, -20)
 
 [node name="Labels" type="Node" parent="."]
 
@@ -420,9 +418,4 @@ theme_override_font_sizes/font_size = 16
 text = "Do not walk on the grass"
 
 [node name="Killzone" parent="." instance=ExtResource("10_24i4x")]
-position = Vector2(260, 842)
-
-[node name="CollisionShape2D" parent="Killzone" index="0"]
-shape = SubResource("WorldBoundaryShape2D_yecn6")
-
-[editable path="Killzone"]
+position = Vector2(-29, 215)

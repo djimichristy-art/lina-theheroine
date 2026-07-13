@@ -85,5 +85,5 @@ target_position = Vector2(-21, 1)
 script = ExtResource("3_55kjn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-0.5, 20.5)
+position = Vector2(0, 20)
 shape = SubResource("RectangleShape2D_l4rmu")
