@@ -1,4 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://dsb88sfncdm3i"]
+[gd_scene load_steps=5 format=3 uid="uid://dsb88sfncdm3i"]
+
+[ext_resource type="Texture2D" uid="uid://d3imq1cdkohu6" path="res://assets/sprites/Capture d'écran 2026-07-13 172839.png" id="1_raabk"]
+[ext_resource type="FontFile" uid="uid://ct4dbm618pble" path="res://assets/sprites/huge_smile/Huge Smile.otf" id="2_fxx0h"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_skcqv"]
+texture = ExtResource("1_raabk")
+modulate_color = Color(0.24115604, 0.24115604, 0.24115604, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kklkt"]
 bg_color = Color(0.3640449, 0.4790966, 0.30093777, 1)
@@ -6,7 +13,7 @@ corner_radius_top_left = 8
 corner_radius_top_right = 8
 corner_radius_bottom_right = 8
 corner_radius_bottom_left = 8
-shadow_size = 5
+shadow_size = 10
 shadow_offset = Vector2(0, 3)
 
 [node name="EndPage" type="Control"]
@@ -17,20 +24,48 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Button" type="Button" parent="."]
+[node name="Panel" type="Panel" parent="."]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -34.0
-offset_top = -11.5
-offset_right = 31.0
-offset_bottom = 11.5
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_skcqv")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 481.0
+offset_top = 247.0
+offset_right = 638.0
+offset_bottom = 287.0
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
 theme_override_colors/font_color = Color(0.068798125, 0.06879836, 0.06879819, 1)
+theme_override_font_sizes/font_size = 32
 theme_override_styles/normal = SubResource("StyleBoxFlat_kklkt")
 text = "Quit
 "
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.43400002
+anchor_right = 0.5
+anchor_bottom = 0.43400002
+offset_left = -194.0
+offset_top = -201.232
+offset_right = 194.0
+offset_bottom = -116.231995
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0.029506557, 0.029506557, 0.029506557, 0)
+theme_override_fonts/font = ExtResource("2_fxx0h")
+theme_override_font_sizes/font_size = 60
+text = "Thank you for helping Lina save the child!"
+horizontal_alignment = 1
+vertical_alignment = 1
