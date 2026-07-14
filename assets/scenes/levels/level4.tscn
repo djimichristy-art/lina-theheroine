@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://uvmkii20tpd8"]
+[gd_scene load_steps=22 format=3 uid="uid://uvmkii20tpd8"]
 
 [ext_resource type="Script" uid="uid://byxol24gucjhw" path="res://assets/scripts/game_manager.gd" id="1_2dmde"]
 [ext_resource type="Texture2D" uid="uid://0v51b3k7kf7w" path="res://assets/sprites/background 3/1.png" id="2_2dmde"]
@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://b25nptbmxw7lv" path="res://assets/scenes/Platform.tscn" id="8_kht7x"]
 [ext_resource type="PackedScene" uid="uid://baer8lkouh6mv" path="res://assets/scenes/enemy.tscn" id="9_1tb34"]
 [ext_resource type="PackedScene" uid="uid://bx1l3k8a43lty" path="res://assets/scenes/killzone.tscn" id="10_udr7q"]
-[ext_resource type="PackedScene" uid="uid://vcnnckq6icbs" path="res://assets/scenes/level_exit.tscn" id="11_ustmx"]
+[ext_resource type="Texture2D" uid="uid://c5pc3q0ajogis" path="res://assets/sprites/Human Baby Sprite Sheet - Guides.png" id="11_2dmde"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2c62f"]
 texture = ExtResource("5_efudw")
@@ -199,7 +199,38 @@ _data = {
 &"move": SubResource("Animation_gyfs4")
 }
 
-[node name="level1" type="Node2D" groups=["Player"]]
+[sub_resource type="AtlasTexture" id="AtlasTexture_djkwp"]
+atlas = ExtResource("11_2dmde")
+region = Rect2(352, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6we7i"]
+atlas = ExtResource("11_2dmde")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_03yxa"]
+atlas = ExtResource("11_2dmde")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_efudw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_djkwp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6we7i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_03yxa")
+}],
+"loop": true,
+"name": &"cry",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kfvjw"]
+
+[node name="level4" type="Node2D" groups=["Player"]]
 
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
@@ -418,8 +449,19 @@ theme_override_colors/font_color = Color(0.13118285, 0.05596775, 0.3155179, 1)
 theme_override_font_sizes/font_size = 16
 text = "Do not walk on the grass"
 
-[node name="LevelExit" parent="." instance=ExtResource("11_ustmx")]
-position = Vector2(4964, 31)
-
 [node name="Killzone" parent="." instance=ExtResource("10_udr7q")]
 position = Vector2(-29, 188)
+
+[node name="Child" type="Area2D" parent="."]
+position = Vector2(73, -4)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Child"]
+position = Vector2(4880, 35)
+sprite_frames = SubResource("SpriteFrames_efudw")
+animation = &"cry"
+frame_progress = 0.3857593
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Child"]
+shape = SubResource("RectangleShape2D_kfvjw")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Child"]
