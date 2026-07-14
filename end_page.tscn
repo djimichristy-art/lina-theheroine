@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dsb88sfncdm3i"]
+[gd_scene load_steps=12 format=3 uid="uid://dsb88sfncdm3i"]
 
 [ext_resource type="Texture2D" uid="uid://d3imq1cdkohu6" path="res://assets/sprites/Capture d'écran 2026-07-13 172839.png" id="1_raabk"]
 [ext_resource type="FontFile" uid="uid://ct4dbm618pble" path="res://assets/sprites/huge_smile/Huge Smile.otf" id="2_fxx0h"]
@@ -15,6 +15,23 @@ corner_radius_bottom_right = 8
 corner_radius_bottom_left = 8
 shadow_size = 10
 shadow_offset = Vector2(0, 3)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_raabk"]
+bg_color = Color(0.13682574, 0.13682574, 0.13682568, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fxx0h"]
+bg_color = Color(0.15487596, 0.154876, 0.15487587, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_skcqv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iiksa"]
+bg_color = Color(0.09620472, 0.09620475, 0.09620469, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tqe2w"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f3o82"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_utyq1"]
 
 [node name="EndPage" type="Control"]
 layout_mode = 3
@@ -36,17 +53,24 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_skcqv")
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 0
 offset_left = 481.0
-offset_top = 247.0
-offset_right = 638.0
-offset_bottom = 287.0
+offset_top = 233.0
+offset_right = 644.0
+offset_bottom = 299.0
 
-[node name="Button" type="Button" parent="VBoxContainer"]
+[node name="Quit" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(0.068798125, 0.06879836, 0.06879819, 1)
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_kklkt")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_raabk")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_fxx0h")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_skcqv")
+theme_override_styles/hover = SubResource("StyleBoxFlat_iiksa")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_tqe2w")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_f3o82")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_utyq1")
 text = "Quit
 "
 
