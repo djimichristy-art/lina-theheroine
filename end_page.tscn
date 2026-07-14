@@ -2,6 +2,12 @@
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kklkt"]
 bg_color = Color(0.3640449, 0.4790966, 0.30093777, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 5
+shadow_offset = Vector2(0, 3)
 
 [node name="EndPage" type="Control"]
 layout_mode = 3
@@ -18,12 +24,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -18.5
-offset_top = -4.0
-offset_right = 18.5
-offset_bottom = 4.0
+offset_left = -34.0
+offset_top = -11.5
+offset_right = 31.0
+offset_bottom = 11.5
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_colors/font_color = Color(0.068798125, 0.06879836, 0.06879819, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_kklkt")
 text = "Quit
 "
