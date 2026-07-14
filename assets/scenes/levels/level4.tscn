@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://uvmkii20tpd8"]
+[gd_scene load_steps=24 format=3 uid="uid://uvmkii20tpd8"]
 
 [ext_resource type="Script" uid="uid://byxol24gucjhw" path="res://assets/scripts/game_manager.gd" id="1_2dmde"]
 [ext_resource type="Texture2D" uid="uid://0v51b3k7kf7w" path="res://assets/sprites/background 3/1.png" id="2_2dmde"]
@@ -11,6 +11,8 @@
 [ext_resource type="PackedScene" uid="uid://baer8lkouh6mv" path="res://assets/scenes/enemy.tscn" id="9_1tb34"]
 [ext_resource type="PackedScene" uid="uid://bx1l3k8a43lty" path="res://assets/scenes/killzone.tscn" id="10_udr7q"]
 [ext_resource type="Texture2D" uid="uid://c5pc3q0ajogis" path="res://assets/sprites/Human Baby Sprite Sheet - Guides.png" id="11_2dmde"]
+[ext_resource type="Script" uid="uid://8j48qw5mxiy" path="res://assets/scenes/levels/child.gd" id="11_6we7i"]
+[ext_resource type="AudioStream" uid="uid://b0atyemduosae" path="res://assets/sprites/freesound_community-baby-crying-loud-100441.mp3" id="13_03yxa"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2c62f"]
 texture = ExtResource("5_efudw")
@@ -455,6 +457,7 @@ position = Vector2(-29, 188)
 
 [node name="Child" type="Area2D" parent="."]
 position = Vector2(73, -4)
+script = ExtResource("11_6we7i")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Child"]
 position = Vector2(4880, 35)
@@ -467,3 +470,4 @@ position = Vector2(4880, 44)
 shape = SubResource("RectangleShape2D_kfvjw")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Child"]
+stream = ExtResource("13_03yxa")
