@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://gusxyx3xaw1q"]
 
-[ext_resource type="Script" uid="uid://bquvxxv2seeur" path="res://assets/scenes/levels/level_exit.gd" id="1_ls0co"]
+[ext_resource type="Script" uid="uid://bquvxxv2seeur" path="res://assets/scripts/level_exit.gd" id="1_ls0co"]
 [ext_resource type="Texture2D" uid="uid://bkiepgwq1mfoj" path="res://assets/sprites/background 1/Capture d'écran 2026-07-13 133116.png" id="2_x3t6o"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_whe5f"]
