@@ -458,6 +458,7 @@ position = Vector2(-29, 188)
 [node name="Child" type="Area2D" parent="."]
 position = Vector2(73, -4)
 script = ExtResource("11_6we7i")
+next_level_path = "end_page.tscn"
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Child"]
 position = Vector2(4880, 35)
@@ -471,3 +472,5 @@ shape = SubResource("RectangleShape2D_kfvjw")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Child"]
 stream = ExtResource("13_03yxa")
+
+[connection signal="body_entered" from="Child" to="Child" method="_on_body_entered"]
