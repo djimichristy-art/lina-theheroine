@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=3 uid="uid://dsb88sfncdm3i"]
 
-[ext_resource type="Script" uid="uid://bs5bp6rf3knxj" path="res://end_page.gd" id="1_fxx0h"]
+[ext_resource type="Script" uid="uid://bs5bp6rf3knxj" path="res://assets/scripts/end_page.gd" id="1_fxx0h"]
 [ext_resource type="Texture2D" uid="uid://d3imq1cdkohu6" path="res://assets/sprites/Capture d'écran 2026-07-13 172839.png" id="1_raabk"]
 [ext_resource type="FontFile" uid="uid://ct4dbm618pble" path="res://assets/sprites/huge_smile/Huge Smile.otf" id="2_fxx0h"]
 
