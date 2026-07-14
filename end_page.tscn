@@ -1,5 +1,6 @@
-[gd_scene load_steps=12 format=3 uid="uid://dsb88sfncdm3i"]
+[gd_scene load_steps=14 format=3 uid="uid://dsb88sfncdm3i"]
 
+[ext_resource type="Script" uid="uid://bs5bp6rf3knxj" path="res://end_page.gd" id="1_fxx0h"]
 [ext_resource type="Texture2D" uid="uid://d3imq1cdkohu6" path="res://assets/sprites/Capture d'écran 2026-07-13 172839.png" id="1_raabk"]
 [ext_resource type="FontFile" uid="uid://ct4dbm618pble" path="res://assets/sprites/huge_smile/Huge Smile.otf" id="2_fxx0h"]
 
@@ -33,6 +34,8 @@ bg_color = Color(0.09620472, 0.09620475, 0.09620469, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_utyq1"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_skcqv"]
+
 [node name="EndPage" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -40,6 +43,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_fxx0h")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -71,6 +75,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_iiksa")
 theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_tqe2w")
 theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_f3o82")
 theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_utyq1")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_skcqv")
 text = "Quit
 "
 
@@ -93,3 +98,5 @@ theme_override_font_sizes/font_size = 60
 text = "Thank you for helping Lina save the child!"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
