@@ -399,7 +399,7 @@ position = Vector2(4945, -108)
 next_level_path = "res://assets/scenes/levels/level4.tscn"
 
 [node name="Slime" parent="." instance=ExtResource("12_n8xpt")]
-position = Vector2(167, -12)
+position = Vector2(757, -68)
 
 [node name="Slime2" parent="." instance=ExtResource("12_n8xpt")]
 position = Vector2(2812, -27)
