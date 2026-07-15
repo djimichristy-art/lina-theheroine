@@ -4,6 +4,7 @@ func _ready() -> void:
 	$AnimatedSprite2D.play("cry")
 	
 	
+	
 func _on_body_entered(body: Node2D) -> void:
 	print("Touched by: ", body.name)
 	if body.name == "Player" :
