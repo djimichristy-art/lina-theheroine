@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://bi5t8bycxw4ff"]
+[gd_scene load_steps=18 format=3 uid="uid://4vdvo8udlmo"]
 
 [ext_resource type="Script" uid="uid://byxol24gucjhw" path="res://assets/scripts/game_manager.gd" id="1_kbvyv"]
 [ext_resource type="Texture2D" uid="uid://2gio622d6aey" path="res://assets/sprites/Parallax Forest Background (Seamless)/Parallax Forest Background - Blue/10_Sky.png" id="2_uki8p"]
@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://b25nptbmxw7lv" path="res://assets/scenes/Platform.tscn" id="8_iemjl"]
 [ext_resource type="PackedScene" uid="uid://baer8lkouh6mv" path="res://assets/scenes/enemy.tscn" id="9_ow024"]
 [ext_resource type="PackedScene" uid="uid://bx1l3k8a43lty" path="res://assets/scenes/killzone.tscn" id="10_jx24s"]
-[ext_resource type="PackedScene" uid="uid://vcnnckq6icbs" path="res://assets/scenes/level_exit.tscn" id="11_uki8p"]
+[ext_resource type="PackedScene" uid="uid://gusxyx3xaw1q" path="res://assets/scenes/level_exit.tscn" id="11_uki8p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2c62f"]
 texture = ExtResource("5_y1mtp")
@@ -199,7 +199,7 @@ _data = {
 &"move": SubResource("Animation_gyfs4")
 }
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_uki8p"]
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_yecn6"]
 
 [node name="level1" type="Node2D" groups=["Player"]]
 
@@ -346,88 +346,13 @@ rotation = 0.024745677
 position = Vector2(1493.0001, -9.000004)
 rotation = 0.024745677
 
-[node name="coin25" parent="Coins" instance=ExtResource("7_k3v2w")]
-position = Vector2(1522.0001, -10.999996)
-rotation = 0.024745677
-
-[node name="coin26" parent="Coins" instance=ExtResource("7_k3v2w")]
-position = Vector2(1805, 5)
-rotation = 0.024745677
-
-[node name="coin27" parent="Coins" instance=ExtResource("7_k3v2w")]
-position = Vector2(1834, 5.000001)
-rotation = 0.024745677
-
-[node name="coin28" parent="Coins" instance=ExtResource("7_k3v2w")]
-position = Vector2(1865, 6.9999995)
-rotation = 0.024745677
-
-[node name="coin29" parent="Coins" instance=ExtResource("7_k3v2w")]
-position = Vector2(2063, 5.000002)
-rotation = 0.024745677
-
-[node name="coin30" parent="Coins" instance=ExtResource("7_k3v2w")]
-position = Vector2(2098.0002, 4.9999986)
-rotation = 0.024745677
-
-[node name="coin31" parent="Coins" instance=ExtResource("7_k3v2w")]
-position = Vector2(2399.0002, -22.999998)
-rotation = 0.024745677
-
-[node name="coin32" parent="Coins" instance=ExtResource("7_k3v2w")]
-position = Vector2(2446.0002, -23.999998)
-rotation = 0.024745677
-
-[node name="coin33" parent="Coins" instance=ExtResource("7_k3v2w")]
-position = Vector2(2481, -25.999992)
-rotation = 0.024745677
-
-[node name="coin34" parent="Coins" instance=ExtResource("7_k3v2w")]
-position = Vector2(2524, -26.000006)
-rotation = 0.024745677
-
-[node name="coin35" parent="Coins" instance=ExtResource("7_k3v2w")]
-position = Vector2(2566.9998, -27.000015)
-rotation = 0.024745677
-
-[node name="coin36" parent="Coins" instance=ExtResource("7_k3v2w")]
-position = Vector2(2610, -25.000008)
-rotation = 0.024745677
-
-[node name="coin37" parent="Coins" instance=ExtResource("7_k3v2w")]
-position = Vector2(2659.0002, -25.999992)
-rotation = 0.024745677
-
-[node name="coin38" parent="Coins" instance=ExtResource("7_k3v2w")]
-position = Vector2(2694, -24.000008)
-rotation = 0.024745677
-
-[node name="coin39" parent="Coins" instance=ExtResource("7_k3v2w")]
-position = Vector2(2736.0002, -23)
-rotation = 0.024745677
-
-[node name="coin40" parent="Coins" instance=ExtResource("7_k3v2w")]
-position = Vector2(2771.9998, -26.000008)
-rotation = 0.024745677
-
-[node name="coin41" parent="Coins" instance=ExtResource("7_k3v2w")]
-position = Vector2(2940, -25)
-rotation = 0.024745677
-
-[node name="coin42" parent="Coins" instance=ExtResource("7_k3v2w")]
-position = Vector2(2978.9998, -27.000008)
-rotation = 0.024745677
-
 [node name="Platforms" type="Node" parent="."]
 
 [node name="Platform" parent="Platforms" instance=ExtResource("8_iemjl")]
-position = Vector2(2324, -28)
+position = Vector2(1299, -61)
 
 [node name="Platform2" parent="Platforms" instance=ExtResource("8_iemjl")]
 position = Vector2(704, 26)
-
-[node name="Platform3" parent="Platforms" instance=ExtResource("8_iemjl")]
-position = Vector2(1930, 20)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 root_node = NodePath("../Platforms/Platform2")
@@ -437,10 +362,7 @@ libraries = {
 autoplay = "move"
 
 [node name="Enemy" parent="." instance=ExtResource("9_ow024")]
-position = Vector2(954, -15)
-
-[node name="Enemy2" parent="." instance=ExtResource("9_ow024")]
-position = Vector2(1382, -30)
+position = Vector2(9, 148)
 
 [node name="Labels" type="Node" parent="."]
 
@@ -481,11 +403,12 @@ theme_override_font_sizes/font_size = 16
 text = "Do not walk on the grass"
 
 [node name="Killzone" parent="." instance=ExtResource("10_jx24s")]
-position = Vector2(137, 98)
+position = Vector2(260, 842)
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Killzone"]
-shape = SubResource("WorldBoundaryShape2D_uki8p")
+[node name="CollisionShape2D" parent="Killzone" index="1"]
+shape = SubResource("WorldBoundaryShape2D_yecn6")
 
 [node name="LevelExit" parent="." instance=ExtResource("11_uki8p")]
-position = Vector2(4986, -22)
-next_level_path = "res://assets/scenes/levels/level2.tscn"
+position = Vector2(4964, 31)
+
+[editable path="Killzone"]

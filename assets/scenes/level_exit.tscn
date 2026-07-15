@@ -1,21 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://vcnnckq6icbs"]
+[gd_scene load_steps=4 format=3 uid="uid://gusxyx3xaw1q"]
 
-[ext_resource type="Script" uid="uid://c8wosh4gftlpx" path="res://assets/scripts/level_exit.gd" id="1_u7ih1"]
-[ext_resource type="Texture2D" uid="uid://bkiepgwq1mfoj" path="res://assets/sprites/background 1/Capture d'écran 2026-07-13 133116.png" id="2_gpo7t"]
+[ext_resource type="Script" uid="uid://bquvxxv2seeur" path="res://assets/scripts/level_exit.gd" id="1_ls0co"]
+[ext_resource type="Texture2D" uid="uid://bkiepgwq1mfoj" path="res://assets/sprites/background 1/Capture d'écran 2026-07-13 133116.png" id="2_x3t6o"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_k3gan"]
-size = Vector2(34.5, 34.5)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_whe5f"]
+size = Vector2(62, 67)
 
-[node name="LevelExit" type="Area2D"]
-script = ExtResource("1_u7ih1")
+[node name="level_exit" type="Area2D"]
+script = ExtResource("1_ls0co")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(2, -1)
-scale = Vector2(0.3869565, 0.29032257)
-texture = ExtResource("2_gpo7t")
+position = Vector2(0, 11)
+texture = ExtResource("2_x3t6o")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1.75, -1.75)
-shape = SubResource("RectangleShape2D_k3gan")
+position = Vector2(2, -3)
+shape = SubResource("RectangleShape2D_whe5f")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
