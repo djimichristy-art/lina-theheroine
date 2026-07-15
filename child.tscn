@@ -1,0 +1,60 @@
+[gd_scene load_steps=9 format=3 uid="uid://p16b17r6ha46"]
+
+[ext_resource type="Texture2D" uid="uid://dcikl0rxu7wa4" path="res://assets/sprites/Human Baby Sprite Sheet - Guides.png" id="1_vgl3u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d04bu"]
+size = Vector2(13, 14)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4bbvj"]
+atlas = ExtResource("1_vgl3u")
+region = Rect2(352, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s1eon"]
+atlas = ExtResource("1_vgl3u")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a5va7"]
+atlas = ExtResource("1_vgl3u")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n65du"]
+atlas = ExtResource("1_vgl3u")
+region = Rect2(64, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gkha7"]
+atlas = ExtResource("1_vgl3u")
+region = Rect2(96, 96, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mojvn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4bbvj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s1eon")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a5va7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n65du")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gkha7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="Child" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 11)
+shape = SubResource("RectangleShape2D_d04bu")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_mojvn")
+frame = 3
+frame_progress = 0.50276196
