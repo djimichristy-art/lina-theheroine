@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://p6b4e5qo7kit"]
+[gd_scene load_steps=18 format=3 uid="uid://p6b4e5qo7kit"]
 
 [ext_resource type="Script" uid="uid://byxol24gucjhw" path="res://assets/scripts/game_manager.gd" id="1_ooq7a"]
 [ext_resource type="Texture2D" uid="uid://c6atmg1jhv738" path="res://assets/sprites/4.png" id="3_oavpb"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://b25nptbmxw7lv" path="res://assets/scenes/Platform.tscn" id="10_wv8k2"]
 [ext_resource type="PackedScene" uid="uid://baer8lkouh6mv" path="res://assets/scenes/enemy.tscn" id="11_rh08n"]
 [ext_resource type="PackedScene" uid="uid://bx1l3k8a43lty" path="res://assets/scenes/killzone.tscn" id="12_3lth8"]
+[ext_resource type="PackedScene" uid="uid://ckmu2jb7w0ewb" path="res://key.tscn" id="12_ooq7a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yeg7j"]
 texture = ExtResource("7_5v7py")
@@ -5182,3 +5183,7 @@ text = "Do not walk on the grass"
 
 [node name="Killzone" parent="." instance=ExtResource("12_3lth8")]
 position = Vector2(11, 264)
+
+[node name="Key" parent="." instance=ExtResource("12_ooq7a")]
+position = Vector2(4996, -24)
+next_level_path = "res://assets/scenes/levels/level3.tscn"
