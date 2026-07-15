@@ -202,21 +202,6 @@ _data = {
 
 [node name="level3" type="Node2D"]
 
-[node name="GameManager" type="Node" parent="."]
-unique_name_in_owner = true
-script = ExtResource("1_iaj0w")
-
-[node name="ScoreLabel" type="Label" parent="GameManager"]
-offset_left = 20.0
-offset_top = -151.0
-offset_right = 211.0
-offset_bottom = -128.0
-theme_override_colors/font_color = Color(0.13118285, 0.05596775, 0.3155179, 1)
-theme_override_font_sizes/font_size = 16
-text = "You collected X coins"
-horizontal_alignment = 1
-autowrap_mode = 2
-
 [node name="Background" type="Node2D" parent="."]
 position = Vector2(340, 34)
 
@@ -278,6 +263,22 @@ layer_0/tile_data = PackedInt32Array(65531, 65536, 0, 65532, 131072, 0, 65533, 1
 
 [node name="Player" parent="." instance=ExtResource("6_ysd26")]
 position = Vector2(34, -18)
+
+[node name="GameManager" type="Node2D" parent="Player"]
+unique_name_in_owner = true
+script = ExtResource("1_iaj0w")
+
+[node name="ScoreLabel" type="Label" parent="Player/GameManager"]
+offset_left = 20.0
+offset_top = -151.0
+offset_right = 211.0
+offset_bottom = -128.0
+theme_override_colors/font_color = Color(0.13118285, 0.05596775, 0.3155179, 1)
+theme_override_font_sizes/font_size = 16
+text = "You collected X coins"
+horizontal_alignment = 1
+autowrap_mode = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="Coins" type="Node" parent="."]
 
