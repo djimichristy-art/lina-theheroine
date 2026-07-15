@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://b25nptbmxw7lv" path="res://assets/scenes/Platform.tscn" id="8_48hk4"]
 [ext_resource type="PackedScene" uid="uid://baer8lkouh6mv" path="res://assets/scenes/enemy.tscn" id="9_7q60e"]
 [ext_resource type="PackedScene" uid="uid://bx1l3k8a43lty" path="res://assets/scenes/killzone.tscn" id="10_24i4x"]
-[ext_resource type="PackedScene" uid="uid://gusxyx3xaw1q" path="res://assets/scenes/level_exit.tscn" id="11_6rrfn"]
+[ext_resource type="PackedScene" uid="uid://djf8x0hr4el7a" path="res://door.tscn" id="11_6rrfn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2c62f"]
 texture = ExtResource("5_lxr3f")
@@ -421,5 +421,6 @@ text = "Do not walk on the grass"
 [node name="Killzone" parent="." instance=ExtResource("10_24i4x")]
 position = Vector2(-29, 215)
 
-[node name="level_exit" parent="." instance=ExtResource("11_6rrfn")]
-position = Vector2(4955, -28)
+[node name="Door" parent="." instance=ExtResource("11_6rrfn")]
+position = Vector2(4945, -108)
+next_level_path = "res://assets/scenes/levels/level4.tscn"
