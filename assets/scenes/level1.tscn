@@ -273,11 +273,11 @@ layer_0/tile_data = PackedInt32Array(65531, 65536, 0, 65532, 131072, 0, 65533, 1
 [node name="Player" parent="." instance=ExtResource("6_5o48e")]
 position = Vector2(96, -23)
 
-[node name="GameManager2" type="Node2D" parent="Player"]
+[node name="GameManager" type="Node2D" parent="Player"]
 unique_name_in_owner = true
 script = ExtResource("1_kbvyv")
 
-[node name="ScoreLabel" type="Label" parent="Player/GameManager2"]
+[node name="ScoreLabel" type="Label" parent="Player/GameManager"]
 offset_left = 10.0
 offset_top = -238.0
 offset_right = 201.0
