@@ -10,8 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://b25nptbmxw7lv" path="res://assets/scenes/Platform.tscn" id="8_48hk4"]
 [ext_resource type="PackedScene" uid="uid://baer8lkouh6mv" path="res://assets/scenes/enemy.tscn" id="9_7q60e"]
 [ext_resource type="PackedScene" uid="uid://bx1l3k8a43lty" path="res://assets/scenes/killzone.tscn" id="10_24i4x"]
-[ext_resource type="PackedScene" uid="uid://djf8x0hr4el7a" path="res://door.tscn" id="11_6rrfn"]
-[ext_resource type="PackedScene" uid="uid://cksj24t0oaq7l" path="res://slime.tscn" id="12_n8xpt"]
+[ext_resource type="PackedScene" uid="uid://djf8x0hr4el7a" path="res://assets/scenes/door.tscn" id="11_6rrfn"]
+[ext_resource type="PackedScene" uid="uid://cksj24t0oaq7l" path="res://assets/scenes/slime.tscn" id="12_n8xpt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lxr3f"]
 texture = ExtResource("4_bytnh")

@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://p16b17r6ha46"]
+[gd_scene load_steps=11 format=3 uid="uid://p16b17r6ha46"]
 
-[ext_resource type="Script" uid="uid://0u4mm332ojg5" path="res://child.gd" id="1_d04bu"]
+[ext_resource type="Script" uid="uid://0u4mm332ojg5" path="res://assets/scripts/child.gd" id="1_d04bu"]
 [ext_resource type="Texture2D" uid="uid://dcikl0rxu7wa4" path="res://assets/sprites/Human Baby Sprite Sheet - Guides.png" id="1_vgl3u"]
+[ext_resource type="AudioStream" uid="uid://bvdmyutou5eat" path="res://assets/sprites/freesound_community-baby-crying-loud-100441.mp3" id="3_h13v5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d04bu"]
 size = Vector2(13, 14)
@@ -62,5 +63,6 @@ frame = 3
 frame_progress = 0.50276196
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_h13v5")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
