@@ -559,7 +559,7 @@ layer_0/tile_data = PackedInt32Array(196912, 131072, 0, 196913, 131072, 0, 19691
 layer_1/name = "Layer1"
 
 [node name="Player" parent="." instance=ExtResource("6_cyq4f")]
-position = Vector2(-65, -15)
+position = Vector2(-74, -16)
 
 [node name="GameManager" type="Node2D" parent="Player"]
 unique_name_in_owner = true
