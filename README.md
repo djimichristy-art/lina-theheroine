@@ -11,5 +11,5 @@ movement: move left with A, move right with D, jump with space bar. OR move  lef
 level 1 to 4
 ##Build with
 Godot 4.5.1
-##AI Usage
+## AI Usage
 I used AI for debugging and fixing code errors, I wrote all the codes myself while following youtube tutorials.
